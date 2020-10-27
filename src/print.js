@@ -1,3 +1,4 @@
-export default function print(text) {
-    console.log(text);
+
+export default () => {
+  console.log('Button Clicked: Here\'s "some text"!');
 };

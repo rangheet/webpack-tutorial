@@ -1,14 +1,12 @@
 {
   "name": "webpack-tutorial",
+  "sideEffects": false,
   "version": "1.0.0",
   "description": "Following official webpack guide https://webpack.js.org/guides/getting-started/",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
-    "server": "node server.js"
+    "start": "http-server dist"
   },
   "repository": {
     "type": "git",
@@ -27,11 +25,14 @@
     "express": "^4.17.1",
     "file-loader": "^6.1.1",
     "html-webpack-plugin": "^4.5.0",
+    "http-server": "^0.12.3",
     "style-loader": "^2.0.0",
     "webpack": "^5.2.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-middleware": "^3.7.2",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0",
+    "workbox-webpack-plugin": "^5.1.4"
   },
   "dependencies": {
     "lodash": "^4.17.20"
